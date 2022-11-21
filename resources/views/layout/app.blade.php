@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="css/magnific-popup.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -39,7 +40,8 @@
         <![endif]-->
     <!-- Add your site or application content here -->
     <!-- Preloader Start Here -->
-    <div id="preloader"></div>
+    <div id="preloader" style="background: #fff url('img/preloader.gif') no-repeat scroll
+        center center;"></div>
     <!-- Preloader End Here -->
     <div id="wrapper">
         <!-- Header Area Start Here -->
@@ -82,7 +84,6 @@
     <!-- Custom Js -->
     <script src="js/main.js"></script>
 
-    <script src="js/custom.js"></script>
 
     <script>
         $.ajaxSetup({

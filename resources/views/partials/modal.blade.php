@@ -8,6 +8,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="login-form">
+                        <div id="message" class="alert alert-success d-none"></div>
                         <form>
                             <label>Username or email address *</label>
                             <input type="text" placeholder="Name or E-mail" id="email" />
@@ -81,9 +82,12 @@
                         success: function(response) {
                             if (response.status == 1) {
                                 location.href = "/";
-                                alert(response.message)
                             } else {
-                                alert(response.message);
+
+                                $('#message').addClass('alert-danger');
+                                $('#message').text(response.message);
+                                $('#message').removeClass('d-none');
+                                toastr.success('fff');
                             }
                         }
                     });
