@@ -13,7 +13,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        //
+        return view('myaccount.product.index');
     }
 
     /**
@@ -23,7 +23,9 @@ class ProductController extends Controller
      */
     public function create()
     {
-        //
+        return view('myaccount.product.create');
+
+       
     }
 
     /**
@@ -56,7 +58,7 @@ class ProductController extends Controller
      */
     public function edit($id)
     {
-        //
+        return view('myaccount.product.update');
     }
 
     /**

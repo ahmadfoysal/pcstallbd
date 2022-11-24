@@ -13,24 +13,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="shortcut icon" type="{{ asset('image/x-icon" href="img/favicon.png') }}">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <!-- Animate CSS -->
-    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="{{ asset('css/animate.min.css') }}">
     <!-- Font-awesome CSS-->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
     <!-- Owl Caousel CSS -->
-    <link rel="stylesheet" href="vendor/OwlCarousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="vendor/OwlCarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="{{ asset('vendor/OwlCarousel/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('vendor/OwlCarousel/owl.theme.default.min.css') }}">
     <!-- Main Menu CSS -->
-    <link rel="stylesheet" href="css/meanmenu.min.css">
+    <link rel="stylesheet" href="{{ asset('css/meanmenu.min.css') }}">
     <!-- Select2 CSS -->
-    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="{{ asset('css/select2.min.css') }}">
     <!-- Magnific CSS -->
-    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
 </head>
 
@@ -40,7 +40,8 @@
         <![endif]-->
     <!-- Add your site or application content here -->
     <!-- Preloader Start Here -->
-    <div id="preloader" style="background: #fff url('img/preloader.gif') no-repeat scroll
+    <div id="preloader"
+        style="background: #fff url('{{ asset('img/preloader.gif') }}') no-repeat scroll
         center center;"></div>
     <!-- Preloader End Here -->
     <div id="wrapper">
@@ -61,28 +62,28 @@
     @include('partials.modal')
     <!-- Report Abuse Modal End-->
     <!-- jquery-->
-    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
     <!-- Popper js -->
-    <script src="js/popper.js"></script>
+    <script src="{{ asset('js/popper.js') }}"></script>
     <!-- Bootstrap js -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     <!-- Owl Cauosel JS -->
-    <script src="vendor/OwlCarousel/owl.carousel.min.js"></script>
+    <script src="{{ asset('vendor/OwlCarousel/owl.carousel.min.js') }}"></script>
     <!-- Meanmenu Js -->
-    <script src="js/jquery.meanmenu.min.js"></script>
+    <script src="{{ asset('js/jquery.meanmenu.min.js') }}"></script>
     <!-- Srollup js -->
-    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="{{ asset('js/jquery.scrollUp.min.js') }}"></script>
     <!-- jquery.counterup js -->
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/waypoints.min.js"></script>
+    <script src="{{ asset('js/jquery.counterup.min.js') }}"></script>
+    <script src="{{ asset('js/waypoints.min.js') }}"></script>
     <!-- Select2 Js -->
-    <script src="js/select2.min.js"></script>
+    <script src="{{ asset('js/select2.min.js') }}"></script>
     <!-- Isotope js -->
-    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="{{ asset('js/isotope.pkgd.min.js') }}"></script>
     <!-- Magnific Popup -->
-    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
     <!-- Custom Js -->
-    <script src="js/main.js"></script>
+    <script src="{{ asset('js/main.js') }}"></script>
 
 
     <script>

@@ -49,7 +49,7 @@
                     <div class="col-lg-2 col-md-2 col-sm-3">
                         <div class="logo-area">
                             <a href="index.html" class="img-fluid">
-                                <img src="img/logo.png" alt="logo">
+                                <img src="{{ asset('img/logo.png') }}" alt="logo">
                             </a>
                         </div>
                     </div>
@@ -140,9 +140,12 @@
                             </nav>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-2 col-sm-3 text-right">
-                        <a href="post-ad.html" class="cp-default-btn">Post Your Ad</a>
-                    </div>
+
+                    @if (Auth::check())
+                        <div class="col-lg-2 col-md-2 col-sm-3 text-right">
+                            <a href="{{ route('product.index') }}" class="cp-default-btn">My Account</a>
+                        </div>
+                    @endif
                 </div>
             </div>
         </div>
